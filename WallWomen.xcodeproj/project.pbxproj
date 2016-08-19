@@ -13,7 +13,30 @@
 		920FEA2A1D509C1800EABDAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 920FEA281D509C1800EABDAB /* Main.storyboard */; };
 		920FEA2C1D509C1800EABDAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 920FEA2B1D509C1800EABDAB /* Assets.xcassets */; };
 		920FEA2F1D509C1800EABDAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 920FEA2D1D509C1800EABDAB /* LaunchScreen.storyboard */; };
+		923678391D66FB9F001BB221 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923678381D66FB9F001BB221 /* Mantle.framework */; };
+		9236783A1D66FB9F001BB221 /* Mantle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 923678381D66FB9F001BB221 /* Mantle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		92C6431B1D66B62500177AAC /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C643161D66B62500177AAC /* TFHpple.m */; };
+		92C6431C1D66B62500177AAC /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C643181D66B62500177AAC /* TFHppleElement.m */; };
+		92C6431D1D66B62500177AAC /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C6431A1D66B62500177AAC /* XPathQuery.m */; };
+		92CF285F1D66D5C70096BC13 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92CF285E1D66D5C70096BC13 /* AFNetworking.framework */; };
+		92CF28601D66D5C70096BC13 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92CF285E1D66D5C70096BC13 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		92CF28631D66F5D80096BC13 /* WebListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CF28621D66F5D80096BC13 /* WebListModel.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		92FE873A1D630101001DB12B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				92CF28601D66D5C70096BC13 /* AFNetworking.framework in Embed Frameworks */,
+				9236783A1D66FB9F001BB221 /* Mantle.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		920FEA1C1D509C1800EABDAB /* WallWomen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallWomen.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +49,17 @@
 		920FEA2B1D509C1800EABDAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		920FEA2E1D509C1800EABDAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		920FEA301D509C1800EABDAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		923678381D66FB9F001BB221 /* Mantle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mantle.framework; path = Carthage/Build/iOS/Mantle.framework; sourceTree = "<group>"; };
+		92C643121D66B5F700177AAC /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		92C643151D66B62500177AAC /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		92C643161D66B62500177AAC /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		92C643171D66B62500177AAC /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		92C643181D66B62500177AAC /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		92C643191D66B62500177AAC /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		92C6431A1D66B62500177AAC /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		92CF285E1D66D5C70096BC13 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
+		92CF28611D66F5D80096BC13 /* WebListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebListModel.h; path = happle/WebListModel.h; sourceTree = "<group>"; };
+		92CF28621D66F5D80096BC13 /* WebListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebListModel.m; path = happle/WebListModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92CF285F1D66D5C70096BC13 /* AFNetworking.framework in Frameworks */,
+				923678391D66FB9F001BB221 /* Mantle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +78,9 @@
 		920FEA131D509C1800EABDAB = {
 			isa = PBXGroup;
 			children = (
+				923678381D66FB9F001BB221 /* Mantle.framework */,
+				92CF285E1D66D5C70096BC13 /* AFNetworking.framework */,
+				92C643121D66B5F700177AAC /* libxml2.2.tbd */,
 				920FEA1E1D509C1800EABDAB /* WallWomen */,
 				920FEA1D1D509C1800EABDAB /* Products */,
 			);
@@ -58,6 +97,9 @@
 		920FEA1E1D509C1800EABDAB /* WallWomen */ = {
 			isa = PBXGroup;
 			children = (
+				92C643141D66B62500177AAC /* happle */,
+				92CF28611D66F5D80096BC13 /* WebListModel.h */,
+				92CF28621D66F5D80096BC13 /* WebListModel.m */,
 				920FEA221D509C1800EABDAB /* AppDelegate.h */,
 				920FEA231D509C1800EABDAB /* AppDelegate.m */,
 				920FEA251D509C1800EABDAB /* ViewController.h */,
@@ -79,6 +121,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		92C643141D66B62500177AAC /* happle */ = {
+			isa = PBXGroup;
+			children = (
+				92C643151D66B62500177AAC /* TFHpple.h */,
+				92C643161D66B62500177AAC /* TFHpple.m */,
+				92C643171D66B62500177AAC /* TFHppleElement.h */,
+				92C643181D66B62500177AAC /* TFHppleElement.m */,
+				92C643191D66B62500177AAC /* XPathQuery.h */,
+				92C6431A1D66B62500177AAC /* XPathQuery.m */,
+			);
+			path = happle;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,6 +144,7 @@
 				920FEA181D509C1800EABDAB /* Sources */,
 				920FEA191D509C1800EABDAB /* Frameworks */,
 				920FEA1A1D509C1800EABDAB /* Resources */,
+				92FE873A1D630101001DB12B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +208,10 @@
 				920FEA271D509C1800EABDAB /* ViewController.m in Sources */,
 				920FEA241D509C1800EABDAB /* AppDelegate.m in Sources */,
 				920FEA211D509C1800EABDAB /* main.m in Sources */,
+				92C6431B1D66B62500177AAC /* TFHpple.m in Sources */,
+				92C6431D1D66B62500177AAC /* XPathQuery.m in Sources */,
+				92CF28631D66F5D80096BC13 /* WebListModel.m in Sources */,
+				92C6431C1D66B62500177AAC /* TFHppleElement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,10 +325,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: shuainan sun (NQ48HZ8RF5)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					/usr/lib/libxml2.dylib,
+				);
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = WallWomen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sseen.WallWomen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "463b2b17-f5f0-449c-86c0-5b48af77ef0e";
 			};
 			name = Debug;
 		};
@@ -276,10 +348,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: shuainan sun (NQ48HZ8RF5)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					/usr/lib/libxml2.dylib,
+				);
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = WallWomen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sseen.WallWomen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "463b2b17-f5f0-449c-86c0-5b48af77ef0e";
 			};
 			name = Release;
 		};
@@ -302,6 +386,7 @@
 				920FEA351D509C1800EABDAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
