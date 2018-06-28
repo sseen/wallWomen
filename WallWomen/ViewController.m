@@ -31,20 +31,23 @@
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     
     [manager GET:strURL parameters:nil progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
-//        TFHpple *doc = [[TFHpple alloc] initWithXMLData:(NSData *)responseObject];
-//        NSArray *contentArray = [doc searchWithXPathQuery:@"//body//script"];
-//        TFHppleElement *element = contentArray[0];
+        // html parse 没用上
+        // TFHpple *doc = [[TFHpple alloc] initWithXMLData:(NSData *)responseObject];
+        // NSArray *contentArray = [doc searchWithXPathQuery:@"//body//script"];
+        // TFHppleElement *element = contentArray[0];
         
+        // 查找截取json
         NSString *fetchedXML = [[NSString alloc] initWithData:(NSData *)responseObject encoding:NSUTF8StringEncoding];
         // NSLog(@"Response string: %@",fetchedXML);
         NSRange startRange = [fetchedXML rangeOfString:@"var mediaList ="];
         NSRange endRange   = [fetchedXML rangeOfString:@"}];" options:NSCaseInsensitiveSearch range:NSMakeRange(startRange.location, fetchedXML.length - startRange.location)];
         
         NSString *jsonStr  = [fetchedXML substringWithRange:NSMakeRange(startRange.location + startRange.length, endRange.location - startRange.location - startRange.length + 2)];
+        // string to json or dic
         NSData *data = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
         id json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-        
-        WebListModel *user = [MTLJSONAdapter modelsOfClass:WebListModel.class fromJSONArray:json error:nil];
+        // json to model
+        NSArray *user = [MTLJSONAdapter modelsOfClass:WebListModel.class fromJSONArray:json error:nil];
         
         NSLog(@"%@", user);
         
